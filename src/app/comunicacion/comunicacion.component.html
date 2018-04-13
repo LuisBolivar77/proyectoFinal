@@ -1,0 +1,6 @@
+<div>
+    <h1 *ngFor="let todosListar of listaTodosMostrar | async">
+            <input type="checkbox" (change)= "cambiarEstado(todosListar.id, $event)">{{todosListar.descripcion}}
+    </h1>         
+</div>
+

@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div>
+       <h1>TODOS: <input type="text" (keydown.enter)="agregarTodo($event.target.value)"></h1>
+  </div>
+  <div>
+       <app-comunicacion [savedTodos$] = "todo"></app-comunicacion>
+  </div>  
+</div>
+<div>
+    <button (click)= "listarPorFiltro(false)">List uncompleted</button>
+</div>
